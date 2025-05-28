@@ -1,0 +1,74 @@
+.header__button-submit {
+    font-family: 'Cormorant Garamond', serif;
+    margin-right: 40px;
+    padding: 2px 20px;
+    background-color: #f7f5f3;
+    color: #e1dcd8;
+    border: 1px solid #e1dcd8;
+    border-radius: 3px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.login__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.login-form__heading {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #8b7968;
+}
+
+.form {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    border: 1px solid #dfd9d7;
+    border-radius: 8px;
+    background: #fffffd;
+}
+
+.form__group:first-of-type {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.form__group:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
+.form__group {
+    margin: 40px 120px 50px;
+}
+
+.form__group-title {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: #8b7968;
+}
+
+.form__group-input {
+    width: 100%;
+    padding: 15px;
+    padding-left: 25px;
+    background-color: #f5f5f5;
+    color: #8e6e5e;
+    border: none;
+}
+
+.form__button-submit {
+    margin-bottom: 50px;
+    width: 20%;
+    padding: 4px 10px;
+    background-color: #817768;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+}

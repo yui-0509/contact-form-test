@@ -1,0 +1,175 @@
+body {
+    background-color: #fff;
+}
+
+.header__button-submit {
+    font-family: 'Cormorant Garamond', serif;
+    margin-right: 40px;
+    padding: 2px 10px;
+    background-color: #f7f5f3;
+    color: #8b7968;
+    border: 1px solid #8b7968;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.admin__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.admin-form__heading {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #8b7968;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.form__group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form__group-content {
+    flex-grow: 1;
+}
+
+.form__group-content input,
+.form__group-content select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+}
+
+.form__group-content input {
+    background-color: #fcfbfc;
+}
+
+.form__group-content select {
+    background-color: #f5f5f5;
+    color: #a79e94;
+}
+
+.form__group-content input::placeholder {
+    color: #a0a0a0;
+}
+
+.form__group-content input{
+    background-color: #f5f5f5;
+    color: #a79e94;
+}
+
+.form__button {
+    display: flex;
+    gap: 10px;
+    flex-basis: 200px;
+}
+
+.form__button-search,
+.form__button-reset {
+    flex-grow: 1;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form__button-search {
+    background-color: #8b7968;
+    color: #fff;
+}
+
+.form__button-reset {
+    background-color: #d8c6b7;
+    color: #fff;
+    text-decoration: none;
+}
+
+.controls-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.button--export {
+    padding: 8px 15px;
+    background-color: #ede9e6;
+    color: #82766d;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #8b7968;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination .active {
+    background-color: #8b7968;
+    color: #fff;
+    border-color: #8b7968;
+}
+
+.admin-table {
+    margin-top: 20px;
+    border: 1px solid #e1dcd8;
+}
+
+.admin-table__inner {
+    width: 100%;
+}
+
+.admin-table__header,
+.admin-table__item {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e1dcd8;
+}
+
+.admin-table__header {
+    background-color: #8b7968;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+.admin-table__item {
+    font-size: 14px;
+    color: #82766d;
+    font-weight: bold;
+}
+
+.details-form__button-submit {
+    padding: 5px 15px;
+    background-color: #fdfdfd;
+    color: #d7c4b2;
+    border: 1px solid #d7c4b2;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+

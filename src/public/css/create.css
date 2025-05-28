@@ -1,0 +1,135 @@
+body {
+    background: #fff;
+}
+
+.create-form__content {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.create-form__heading {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #8b7968;
+}
+
+.form {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    border-radius: 8px;
+    background: #fffffd;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form__label--item {
+    font-size: 17px;
+    color: #8b7968;
+}
+
+.form__label--required {
+    color: #f8a2a0;
+}
+
+.form__group-content {
+    width: 62%;
+    text-align: left;
+}
+
+.form__input--text:first-of-type {
+    display: flex;
+}
+
+.form__input--text input,
+.form__input--text select,
+.form__input--text textarea {
+    width: 100%;
+    background-color: #f5f5f5;
+    border: none;
+    color: #8e6e5e;
+}
+
+.form__input--text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.form__input--text input,
+.form__input--text select {
+    height: 40px;
+}
+
+.form__input--text input[name="last_name"],
+.form__input--text input[name="first_name"] {
+    width: 48%;
+    margin-right: 4%;
+}
+
+.form__input--text input[name="first_name"] {
+    margin-right: 0;
+}
+
+.form__input--text input[name="tel[]"] {
+    width: 50%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.form__input--text input[name="tel[]"]:last-child {
+    margin-right: 0;
+}
+
+.hyphen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 10px;
+    font-size: 20px;
+    color: #8b7968;
+}
+
+.form__input--radio {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: #8b7968;
+}
+
+.form__input--radio label {
+    display: flex;
+    align-items: center;
+}
+
+.form__input--radio input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #8b7968;
+}
+
+.form__input--text option {
+    color: #8e6e5e;
+}
+
+.form__group-textarea {
+    height: 150px;
+    padding: 10px;
+    resize: none;
+}
+
+.form__button-submit {
+    background-color: #8b7968;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
