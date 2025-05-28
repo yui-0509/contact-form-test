@@ -20,7 +20,7 @@ Laravel環境構築
 ・MySQL 8.0.26
 
 ER図
-laravel/contact-form-test/src/public/images/er_drawio.png
+![ER図](./src/public/images/er_drawio.png)
 
 URL
 ・開発環境：http://localhost/
