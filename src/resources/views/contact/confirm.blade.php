@@ -39,9 +39,7 @@
                     <th class="confirm-table__header">電話番号</th>
                     <td class="confirm-table__text">
                         <p>{{ $data['tel'][0] }}{{ $data['tel'][1] }}{{ $data['tel'][2] }}</p>
-                        <input type="hidden" name="tel[0]" value="{{ $data['tel'][0] }}">
-                        <input type="hidden" name="tel[1]" value="{{ $data['tel'][1] }}">
-                        <input type="hidden" name="tel[2]" value="{{ $data['tel'][2] }}">
+                        <input type="hidden" name="tel[0]" value="{{ $data['tel'][0] }}-{{ $data['tel'][1] }}-{{ $data['tel'][2] }}">
                     </td>
                 </tr>
                 <tr class="confirm-table__row">

@@ -26,7 +26,7 @@ class ContactController extends Controller
 
     Auth::login($user);
 
-    return redirect('/');
+    return redirect('/admin');
     }
 
     public function showLoginForm() {
@@ -36,8 +36,8 @@ class ContactController extends Controller
     public function login(LoginRequest $request) {
         $data = $request->only(['email', 'password']);
         if (Auth::attempt($data)) {
-            $request->session()->regenerate();
-            return redirect('/');
+        $request->session()->regenerate();
+        return redirect('/admin');
         }
     }
 
@@ -50,9 +50,7 @@ class ContactController extends Controller
     $data = $request->only([
         'last_name', 'first_name', 'gender', 'email', 'address', 'building', 'detail', 'message'
     ]);
-
-    $data['tel'] = implode('-', $request->input('tel'));
-
+    $data['detail'] = $data['inquiry_type'];
     Contact::create($data);
 
     return redirect('/thanks');
@@ -95,6 +93,13 @@ class ContactController extends Controller
 
     $contacts = $query->paginate(7)->appends($request->all());
 
-    return view('index', compact('contacts'));
-}
+    return view('admin', compact('contacts'));
+    }
+
+    public function destroy($id) {
+    $contact = Contact::findOrFail($id);
+    $contact->delete();
+
+    return redirect('/admin');
+    }
 }

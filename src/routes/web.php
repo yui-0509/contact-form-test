@@ -16,5 +16,6 @@ Route::get('/confirm', function () {
 Route::post('/store', [ContactController::class, 'store']);
 Route::get('thanks', [ContactController::class, 'thanks']);
 Route::middleware('auth')->group(function () {
-    Route::get('/', [ContactController::class, 'index']);
+    Route::get('/admin', [ContactController::class, 'index']);
+    Route::delete('/contacts/{id}', [ContactController::class, 'destroy'])->name('contacts.destroy');
 });

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/index.css') }}">
+<link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 @endsection
 
 @section('header-buttons')
@@ -15,7 +15,7 @@
     <div class="admin-form__heading">
         <h2>Admin</h2>
     </div>
-    <form class="form" method="GET" action="/">
+    <form class="form" method="GET" action="/admin">
         <div class="form__group">
             <div class="form__group-content">
                 <input type="text" name="keyword" placeholder="名前やメールアドレスを入力してください">
@@ -75,6 +75,24 @@
                     <td class="admin-table__item">{{ $contact->category->content }}</td>
                     <td class="admin-table__item">
                         <input type="checkbox" id="modal-{{ $contact->id }}" class="modal-toggle" hidden>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <p><strong>お名前</strong>：{{ $contact->last_name }} {{ $contact->first_name }}</p>
+                                <p><strong>性別</strong>：{{ $contact->gender }}</p>
+                                <p><strong>メールアドレス</strong>：{{ $contact->email }}</p>
+                                <p><strong>電話番号</strong>：{{ $contact->tel }}</p>
+                                <p><strong>住所</strong>：{{ $contact->address }}</p>
+                                <p><strong>建物名</strong>：{{ $contact->building }}</p>
+                                <p><strong>お問い合わせの種類</strong>：{{ $contact->category->content }}</p>
+                                <p><strong>お問い合わせ内容</strong>：{{ $contact->content }}</p>
+                                <label for="modal-{{ $contact->id }}" class="modal-close">✕</label>
+                                <form method="POST" action="{{ route('contacts.destroy', $contact->id) }}">
+                                @csrf
+                                @method('DELETE')
+                                    <button type="submit" class="button--delete">削除</button>
+                                </form>
+                            </div>
+                        </div>
                         <label for="modal-{{ $contact->id }}" class="details-form__button-submit">詳細</label>
                     </td>
                 </tr>
